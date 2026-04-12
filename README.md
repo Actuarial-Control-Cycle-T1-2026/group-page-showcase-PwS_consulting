@@ -1,6 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/FxAEmrI0)
 
-# PwS Advisory ACTL4001 Student Research Case Study
+# PwS Advisory - ACTL4001 Student Research Case Study
 ### **Actuaries in Space: The Pricing Frontier** 
 **Prepared by:** Sabina Xie, Pamela Konstant, Wesley Lu  
 **Date:** 30 March 2026    
@@ -8,75 +7,53 @@
 ---
 
 ## Table of Contents
+1. [Executive Summary](#executive-summary)
+2. [Program Design](#program-design)
+3. [Pricing and Capital Models](#pricing-and-capital-models)
+4. [Code Overview](#code-overview)
+    * [Data Sources and Limitations](#data-sources-and-limitations)
+    * [Model and Code Process](#modelling-process)
 
-- [Executive Summary](#executive-summary)
-- [Program Design](#program-design)
-- [Pricing and Capital Models](#pricing-and-capital-models)
-- [Risk Considerations](#risk-considerations)
-- [Model Assumptions](#model-assumptions)
-- [Data Sources and Limitations](#data-sources-and-limitations)
-- [Code Development and Model Assessment](#code-development-and-model-assessment)
 
 ---
 
 ## Executive Summary
+This project develops and evaluates pricing models for **Cosmic Quarry Mining Corporation**, operating across three distinct solar systems. The analysis spans four principal hazard classes: **Equipment Failure, Cargo Loss, Workers’ Compensation, and Business Interruption**.
 
-This project develops and evaluates pricing models for Cosmic Quarry Mining Corporation, operating across three distinct solar systems. The analysis spans four principal hazard classes - equipment failure, cargo loss, workers’ compensation, and business interruption - each exhibiting materially different risk characteristics across operating environments.
-
-We assess short and long-term distributions of costs, returns, and net revenue to quantify both expected performance and tail risk exposure. These insights inform the design of targeted insurance products, calibrated to the unique operational and systemic risks within each solar system. The resulting framework emphasises both financial sustainability and adaptability, ensuring robustness under evolving conditions and emerging uncertainties.
+We assess short and long-term distributions of costs, returns, and net revenue to quantify both expected performance and tail risk exposure. The resulting framework emphasizes financial sustainability and adaptability, ensuring robustness under evolving conditions and emerging uncertainties.
 
 **Key Deliverables:**
-- Tailored insurance products across four hazard classes: Equipment Failure, Cargo Loss, Workers' Compensation, and Business Interruption
-- Stochastic loss projections with tail risk quantification (VaR, TVaR)
-- Scenario analysis under base, best-case, and worst-case conditions
-- Stress testing under a 1-in-100 Carrington Event scenario
-- ESG-linked pricing incentives to promote sustainable operations
-- 
+* Stochastic loss projections with tail risk quantification (**VaR, TVaR**).
+* Scenario analysis (Base, Best, and Worst-case) and a **1-in-100 Carrington Event** stress test.
+* ESG-linked pricing incentives to promote sustainable operations.
+
 ---
 
 ## Program Design
 
-Each product is structured to align with operational realities while maintaining alignment with Galaxy General's risk appetite and capital constraints.
-
-**Jump to hazard area:**
-- [Cargo Loss](#cargo-loss)
-- [Workers' Compensation](#workers-compensation)
-- [Equipment Failure](#equipment-failure)
-- [Business Interruption](#business-interruption)
-
----
-
 ### Cargo Loss
-
----
+[ADD CONTENT HERE]
 
 ### Workers' Compensation
-
----
+[ADD CONTENT HERE]
 
 ### Equipment Failure
-
-The Equipment Failure product is a per-unit indemnity policy covering sudden and unforeseen mechanical or electrical failure of extraction units across Cosmic Quarry's interstellar fleet, with coverage triggered strictly by direct physical damage and excluding wear and tear, consequential loss, and regulatory action.
-
-- **Deductibles:** Minimum observed historical claim per equipment type
-- **Coverage Limits:** 95th percentile of observed loss distribution per equipment class
-- **ESG Maintenance :** An ESG maintenance governance concession grants Oryn Delta policyholders a 5% premium discount upon reaching 150% of their 2174 baseline maintenance interval
-
----
+The Equipment Failure product is a per-unit indemnity policy covering sudden and unforeseen mechanical or electrical failure of extraction units across the interstellar fleet.
+* **Deductibles:** Minimum observed historical claim per equipment type.
+* **Coverage Limits:** 95th percentile of observed loss distribution per equipment class.
+* **ESG Maintenance:** 5% premium discount for Oryn Delta policyholders who reach 150% of their 2174 baseline maintenance interval.
 
 ### Business Interruption
-
-The Business Interruption product is a Uniform indemnity coverage across all solar systems. The coverage is triggered if a quantifiable, unplanned cessation of production output directly attributable to physical peril.
-
-- **Deductible:** 10th percentile of observed historical claims
-- **Coverage Limit:** 90th percentile (conservative due to extreme tail)
-- **Exclusions:** Deliberate shutdowns, market-driven losses, regulatory non-compliance, demand fluctuations
+Uniform indemnity coverage across all solar systems triggered by a quantifiable, unplanned cessation of production output directly attributable to physical peril.
+* **Deductible:** 10th percentile of observed historical claims.
+* **Coverage Limit:** 90th percentile (conservative due to extreme tail).
+* **Exclusions:** Deliberate shutdowns, market-driven losses, and regulatory non-compliance.
 
 ---
 
 ## Pricing and Capital Models
 
-All models employ a **Monte Carlo stochastic framework** with 100,000 simulation paths across a 10-year projection horizon (2026–2035). The following metrics represent the **10-year base case projections** for the proposed insurance products.
+All models employ a **Monte Carlo stochastic framework** with 100,000 simulation paths across a 10-year projection horizon (2026–2035).
 
 | Metric | Cargo Loss | Equipment Failure | Workers' Comp | Business Interruption |
 | :--- | :---: | :---: | :---: | :---: |
@@ -85,41 +62,29 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 | **VaR₉₉** | $x | $862.9m | $x | $52.2m |
 | **TVaR₉₉** | $x | $882.7m | $x | $59.3m |
 
-Across all hazard areas (Cargo Loss, Workers' Compensation, Equipment Failure, and Business Interruption), the proposed designs demonstrate structural resilience, remaining cumulatively profitable over a 10-year horizon under base case assumptions. By effectively "clipping" extreme tail exposures, the models ensure that Galaxy General maintains strong solvency and predictable financial outcomes as exposures expand across the solar systems.
+> **Note:** The proposed designs remain cumulatively profitable over a 10-year horizon. By effectively "clipping" extreme tail exposures, the models ensure Galaxy General maintains strong solvency as interstellar exposures expand.
 
 ---
-
-## Risk Considerations
-
+## Code Overview
 
 ---
+### Data Sources and Limitations
+* **Sources:** [Add sources, e.g., Cosmic Quarry Claim History]
+* **Limitations & Mitigations:** [Add specific data gaps here]
 
-## Model Assumptions
 
-### Economic Assumptions
-
----
-
-### Pricing & Profitability Assumptions
-
----
-
-### New Business Growth Assumptions
-
----
-
-## Data Sources and Limitations
-
-### Data Sources
-
-### Known Data Limitations & Mitigations
-
----
-
-## Code Development and Model Assessment
+### Modelling Process
 
 **Step 1. Data Cleaning**
-All four claim datasets underwent a standardised cleaning pipeline prior to modelling. Negative values in numeric fields were corrected by taking absolute values, reflecting data entry sign errors rather than genuine negative observations. Records falling outside the prescribed data dictionary ranges were removed - for example, claim counts exceeding the stated maximum, exposure values above 1, and categorical scores outside their defined scale. Categorical variables containing trailing noise strings were standardised. Across all four lines, the cleaning process removed between 1.5% and 2.0% of records, preserving the vast majority of historical experience while eliminating records that would have introduced model bias.
+All four claim datasets underwent a standardised cleaning pipeline prior to modelling. Negative values in numeric fields were corrected by taking absolute values, reflecting data entry sign errors rather than genuine negative observations. Records falling outside the prescribed data dictionary ranges were removed - for example, claim counts exceeding the stated maximum, exposure values above 1, and categorical scores outside their defined scale. Categorical variables containing trailing noise strings were standardised. Across all four lines, the cleaning process removed between 1.5% and 2.0% of records, preserving the vast majority of historical experience while eliminating records that would have introduced model bias. An example of some transformations are seen below
+
+| Cleaning Transformation Code Example  | Rationale |
+| :--- | :--- |
+| `df_severity[, claim_cost := abs(claim_cost)]` | Corrects sign-entry errors in variables such as severity costs and frequency counts. |
+| `str_remove(solar_system, "_\\?\\?\\?.*")` | Standardizes strings to prevent join mismatches (e.g., "Zeta_???9538 --> Zeta "). |
+| `df_inv[exposure > 1, exposure := 1]` | Purges illogical values based on data dictionary range. |
+
+The process removed approximately 1.5%–2.0% of the total records, preserving the vast majority of historical experience while ensuring a high-integrity training set.
 
 **Step 2. Model Selection and Development**
 
@@ -129,12 +94,39 @@ Frequency and severity models were selected independently for each line through 
 
 Since Cosmic Quarry's active operations span the Helionis Cluster, Bayesia System, and Oryn Delta - systems not fully represented in the historical training data - a new business pricing dataframe was constructed from the ground up for each line. Fleet inventory, equipment schedules, and operational characteristics were sourced from the Cosmic Quarry inventory file and the Online Encyclopedia Entries, and used to build a cohort-level exposure base. This dataframe was then projected forward over a 10-year horizon, with fleet/unit size evolving according to Cosmic Quarry's stated expansion targets and new units aging through the projection period.
 
+### Step 3. New Business Creation
+
+Since Cosmic Quarry's active operations span the Helionis Cluster, Bayesia System, and Oryn Delta, a new business pricing dataframe was constructed from the ground up. This cohort-level exposure base was projected forward over a 10-year horizon, creating a high-level 'Panel Data' structure where predictors evolve dynamically each year.
+
+| Year | Solar System | Predictor 1 (e.g., Age) | Predictor 2 (e.g., Intensity) |
+| :--- | :--- | :---: | :---: |
+| 2175 | Helionis Cluster | X | X |
+| 2076 | Oryn Delta | X | X |
+| 2078 | Bayesia System | X | X |
+| 2079 | Helionis Cluster | X | X |
+| 2080 | Oryn Delta | X | X |
+| ...  | ... | ... | ... |
+| 2085 | Bayesia System | X | X |
+
 **Step 4. Scenario Generation**
 
-Using a Monte Carlo simulation across 10,000–100,000 paths per run, aggregate losses, premiums, and discounted profit were projected over both a 1-year and 10-year horizon. Three scenarios were constructed for each line: a base case where model predictions are realised exactly; a best case assuming an improving risk environment; and a worst case assuming deteriorating conditions. A separate Carrington-scale stress test was constructed for each hazard line to model a 1-in-100 year correlated solar event, with system-specific frequency multipliers and severity loadings grounded in each solar system's described stellar characteristics.
+Aggregate losses, premiums, and discounted profit were projected using a Monte Carlo simulation engine across 10,000–100,000 paths per run. The framework is designed for high modularity, allowing for us to feed in different risk parameters to stress test financial outcomes over 1-year and 10-year horizons. The following code demonstrates how these parameters are bundled into a list and passed to the simulation function (run_mc) to vary the risk environment dynamically:
 
----
+```r
+# Scenario Parameterisation Example
+best_scenario_bi <- list(
+  name           = "Best Case (Smooth Operations)",
+  lambda_mult    = rep(0.9, 10),
+  sev_shift      = c(rep(log(0.95), 3), rep(log(0.9), 4), rep(log(0.85), 3)),
+  shock_sev_mult = 0
+)
 
-
----
+# Run MC Simulation
+bi_worst <- run_mc( #run_mc would be defined as the monte-carlo function 
+  dt        = bi_dt_worst,
+  horizon   = 10,
+  sims      = 10000,
+  scenario  = worst_scenario_bi,
+  seed      = 123
+)
 
