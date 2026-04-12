@@ -82,7 +82,7 @@ The following modelling process was applied consistently across each product lin
 
 - [Cargo Loss Model](https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/code/cargo_loss)
 - [Equipment Failure Model](https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/code/equipment_failure)
-- [Workers’ Compensation Model](LINK_HERE)
+- [Workers’ Compensation Model](https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/code/workers_compensation)
 - [Business Interruption Model](https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/code/business_interruption)
 
 
