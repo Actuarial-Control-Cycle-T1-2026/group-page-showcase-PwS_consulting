@@ -86,7 +86,7 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 #### Limitations & Mitigations
 * **Data Corruption:** Categorical fields like `occupation` contained corrupted strings (e.g., `_???` suffixes). 
     * *Mitigation:* Applied string cleaning to restore categorical integrity.
-* **Inconsistent Variables:** Instances of non-logical values (e.g., negative salaries) in the claims data. 
+* **Inconsistent Variables:** Instances of non-logical values (e.g. negative salaries) in the claims data. 
     * *Mitigation:* Implemented logical adjustments and capped variables to align with established data dictionary bounds.
 
 ---
