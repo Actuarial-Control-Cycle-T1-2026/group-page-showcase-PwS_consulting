@@ -78,10 +78,10 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 
 ### Data Sources and Limitations
 #### Sources
-* **Cosmic Quarry Claim History:** Historical frequency and severity data for all four hazard lines (Cargo, Equipment Failure, Workers’ Compensation, and Business Interruption).
-* **Workforce Census:** Personnel data including occupation, average age, and salary.
-* **Operational Inventory:** Equipment logs detailing the count and usage rates of mining units across Helionis, Bayesia, and Oryn Delta.
-* **Economic Indicators:** 10-year risk-free annual spot rates and historical inflation data for discounting and loss development.
+* **[[Cosmic Quarry Claim History](https://link-to-source.com)]**: Historical frequency and severity data for all four hazard lines (Cargo, Equipment Failure, Workers’ Compensation, and Business Interruption).
+* **[[Workforce Census](https://link-to-source.com)]**: Personnel data including occupation, average age, and salary.
+* **[[Operational Inventory](https://link-to-source.com)]**: Equipment logs detailing the count and usage rates of mining units across Helionis, Bayesia, and Oryn Delta.
+* **[[Economic Indicators](https://link-to-source.com)]**: 10-year risk-free annual spot rates and historical inflation data for discounting and loss development.
 
 #### Limitations & Mitigations
 * **Data Corruption:** Categorical fields like `occupation` contained corrupted strings (e.g., `_???` suffixes). 
