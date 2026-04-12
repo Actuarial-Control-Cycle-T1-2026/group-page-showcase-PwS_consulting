@@ -77,9 +77,19 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 
 ---
 ### Data Sources and Limitations
-* **Sources:** [Add sources, e.g., Cosmic Quarry Claim History]
-* **Limitations & Mitigations:** [Add specific data gaps here]
+#### Sources
+* **Cosmic Quarry Claim History:** Historical frequency and severity data for all four hazard lines (Cargo, Equipment Failure, Workers’ Compensation, and Business Interruption).
+* **Workforce Census:** Personnel data including occupation, average age, and salary.
+* **Operational Inventory:** Equipment logs detailing the count and usage rates of mining units across Helionis, Bayesia, and Oryn Delta.
+* **Economic Indicators:** 10-year risk-free annual spot rates and historical inflation data for discounting and loss development.
 
+#### Limitations & Mitigations
+* **Data Corruption:** * *Gap:* Categorical fields like `occupation` contained corrupted strings (e.g., `_???` suffixes). 
+    * *Mitigation:* Applied string cleaning to restore categorical integrity.
+* **Inconsistent Variables:** * *Gap:* Instances of non-logical values (e.g., negative salaries) in the claims data. 
+    * *Mitigation:* Implemented logical adjustments and capped variables to align with established data dictionary bounds.
+
+---
 
 ## Modelling Process
 The following modelling process was applied consistently across each product line. Product-specific implementations of these steps are contained within the corresponding scripts:
