@@ -122,7 +122,7 @@ E.g.
 
 ### Step 4. Scenario Generation
 
-Aggregate losses, premiums, and discounted profit were projected using a Monte Carlo simulation engine across 10,000–100,000 paths per run. The framework is designed for high modularity, allowing for us to feed in different risk parameters to stress test financial outcomes over 1-year and 10-year horizons. The following code demonstrates how these parameters are bundled into a list and passed to the simulation function (run_mc) to vary the risk environment dynamically:
+Aggregate losses, premiums, and discounted profit were projected using a Monte Carlo simulation engine across 10,000–100,000 paths per run. The framework is designed for high modularity, enabling flexible parameterisation of risk drivers to stress test financial outcomes over 1-year and 10-year horizons. The following code demonstrates how these parameters are bundled into a list and passed into the [Monte Carlo Simulation Function](https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/blob/main/code/monte_carlo_adj.R) to vary the risk environment dynamically:
 
 ```r
 # Scenario Parameterisation Example
