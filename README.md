@@ -39,7 +39,12 @@ The Cargo Loss product is a per-shipment insurance policy covering physical loss
 * **Exclusions:** Cosmic Disaster events, Intergalatic War
   
 ### Workers' Compensation
-[ADD CONTENT HERE]
+An exposure-based indemnity policy providing medical and wage replacement coverage for personnel across planetary operations and spacecraft transit.
+
+* **Deductibles:** 10th percentile of historical loss, partitioned by occupation risk-class to minimise frequency of nuisance claims.
+* **Coverage Limits:** 99th percentile (VaR) of the aggregate loss distribution, providing a robust buffer against systemic tail events.
+* **Risk Tiering (ESG):** Three-tier classification system based on a composite safety index. Premium and benefit multipliers are adjusted dynamically based on safety training, protective gear quality, and psychological stress indices.
+* **Exclusions:** Self-inflicted injuries, unauthorized extra-vehicular activity, and non-occupational exposure to radiation.
 
 ### Equipment Failure
 The Equipment Failure product is a per-unit indemnity policy covering sudden and unforeseen mechanical or electrical failure of extraction units across the interstellar fleet.
