@@ -73,9 +73,9 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 > **Note:** The proposed designs remain cumulatively profitable over a 10-year horizon. By effectively "clipping" extreme tail exposures, the models ensure Galaxy General maintains strong solvency as interstellar exposures expand.
 
 ---
+
 ## Code Overview
 
----
 ### Data Sources and Limitations
 #### Sources
 * **Cosmic Quarry Claim History:** Historical frequency and severity data for all four hazard lines (Cargo, Equipment Failure, Workers’ Compensation, and Business Interruption).
@@ -84,9 +84,9 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 * **Economic Indicators:** 10-year risk-free annual spot rates and historical inflation data for discounting and loss development.
 
 #### Limitations & Mitigations
-* **Data Corruption:** * *Gap:* Categorical fields like `occupation` contained corrupted strings (e.g., `_???` suffixes). 
+* **Data Corruption:** Categorical fields like `occupation` contained corrupted strings (e.g., `_???` suffixes). 
     * *Mitigation:* Applied string cleaning to restore categorical integrity.
-* **Inconsistent Variables:** * *Gap:* Instances of non-logical values (e.g., negative salaries) in the claims data. 
+* **Inconsistent Variables:** Instances of non-logical values (e.g., negative salaries) in the claims data. 
     * *Mitigation:* Implemented logical adjustments and capped variables to align with established data dictionary bounds.
 
 ---
