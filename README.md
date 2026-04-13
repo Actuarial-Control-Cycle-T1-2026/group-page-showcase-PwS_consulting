@@ -79,7 +79,7 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 ### Data Sources and Limitations
 #### Sources
 * **[Cosmic Quarry Claim History](<https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/Claims History>)**: Historical frequency and severity data for all four hazard lines (Cargo, Equipment Failure, Workers’ Compensation, and Business Interruption).
-* **[Workforce Census](<https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/Personnel & Inventory>)**: Personnel data including occupation, average age, and salary.
+* **[Workforce Personnel](<https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/Personnel & Inventory>)**: Personnel data including occupation, average age, and salary.
 * **[Operational Inventory](<https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/Personnel & Inventory>)**: Equipment logs detailing the count and usage rates of mining units across Helionis, Bayesia, and Oryn Delta.
 * **[Economic Indicators](<https://github.com/Actuarial-Control-Cycle-T1-2026/group-page-showcase-PwS_consulting/tree/main/Economic Data>)**: 10-year risk-free annual spot rates and historical inflation data for discounting and loss development.
 
