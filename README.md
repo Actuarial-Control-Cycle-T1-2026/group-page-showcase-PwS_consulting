@@ -65,10 +65,10 @@ All models employ a **Monte Carlo stochastic framework** with 100,000 simulation
 
 | Metric | Cargo Loss | Equipment Failure | Workers' Comp | Business Interruption |
 | :--- | :---: | :---: | :---: | :---: |
-| **Expected Loss** | $480.3bn | $745.8m | $x | $212.5m |
-| **Expected Total Profit** | $64.8bn | $367.2m | $x | $57.6m |
-| **VaR₉₉** | $532.4bn | $862.9m | $x | $52.2m |
-| **TVaR₉₉** | $537.6bn | $882.7m | $x | $59.3m |
+| **Expected Loss** | $480.3bn | $745.8m | $217.4m | $212.5m |
+| **Expected Total Profit** | $64.8bn | $367.2m | $43.1m | $57.6m |
+| **VaR₉₉** | $532.4bn | $862.9m | $431.9m | $52.2m |
+| **TVaR₉₉** | $537.6bn | $882.7m | $474.3m | $59.3m |
 
 > **Note:** The proposed designs remain cumulatively profitable over a 10-year horizon. By effectively "clipping" extreme tail exposures, the models ensure Galaxy General maintains strong solvency as interstellar exposures expand.
 
